@@ -3,7 +3,7 @@ export const categoryReducer = (state = { category: [] }, action) => {
       case "CATEGORY_LIST_REQUEST":
         return { loading: true, category: [] }
       case "CATEGORY_LIST_SUCCESS":
-        return { loading: false, products: action.payload }
+        return { loading: false, category: action.payload }
       case "CATEGORY_LIST_ERROR":
         return { loading: false, error: action.payload }
       default:
