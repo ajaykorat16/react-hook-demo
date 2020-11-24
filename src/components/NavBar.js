@@ -6,6 +6,7 @@ const NaVBar = () => {
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/list">Table</Link></li>
+                <li><Link to="/form">Form</Link></li>
             </ul>
         </header>
     );
