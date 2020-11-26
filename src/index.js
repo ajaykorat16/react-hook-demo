@@ -1,14 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Suspense } from 'react'
+import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import store from './store'
 
-import './index.css';
-import App from './App';
+import './index.css'
+import App from './App'
+import './i18next'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Suspense fallback='loading'>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Suspense>,
   document.getElementById('root')
-);
+)

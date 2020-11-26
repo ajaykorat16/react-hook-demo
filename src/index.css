@@ -50,27 +50,32 @@ header ul li a:hover {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-.category td, .category th {
+.category td,
+.category th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-.category tr:nth-child(even){background-color: #f2f2f2;}
+.category tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-.category tr:hover {background-color: #ddd;}
+.category tr:hover {
+  background-color: #ddd;
+}
 
 .category th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color:#666;
+  background-color: #666;
   color: white;
 }
 
-input[type=text], select {
+input[type='text'],
+select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -84,4 +89,8 @@ input[type=text], select {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+.language-btn {
+  float: right;
 }
